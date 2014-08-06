@@ -253,7 +253,7 @@ public final class HannanumTagger implements Tagger {
 						String tag = result.substring(delimiter + 1,
 								(morpheme > 0) ? (morpheme - 1) : result.length());
 
-						if (tag.matches("[npmijexsf]{1}[a-z]{0,3}")) {
+						if (tag.matches("[npmijexsf]{1}[a-z]{0,4}")) {
 							word.addMorpheme(new TaggedMorpheme(morph, tag,
 									TaggerType.HNN));
 						} else {
